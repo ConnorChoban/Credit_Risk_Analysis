@@ -62,4 +62,11 @@ The purpose of this analysis is to determine which machine learning algorithm is
 
 ## Summary
 
-The first four methods we used - Random Oversampling, SMOTE, Cluster Centroids and SMOTEENN - had accuracy scores ranging from 
+The first four methods we used - Random Oversampling, SMOTE, Cluster Centroids and SMOTEENN - had accuracy scores ranging from 51.08% to 64.56%, whereas the last two methods - the Balanced Random Forest Classifier and Easy Ensemble classifier - were much more accurate, with scores of 78.77% and 92.54% respectively. 
+
+In terms of precision, the first four methods all had a score of just 1%, meaning that out of 100 loans deemed to be high risk, only 1 was actually high risk. The precision score was significantly improved using the Balanced Random Forest Classifier at 7%, and even more so using the Easy Ensemble Classifier, with a score of 7%. However, at just nine percent, the precision score is still very low. We could potentially get a higher score by using a larger dataset with more instances of fraudulent loans.
+
+Finally, the recall score (also known as Sensitivity) for the first four methods ranged from to 57% to 70%, whereas the recall score for both the Balanced Random Forest Classifier and the Easy Ensemble Classifier was 91%. This means that out of 100 defaulted loans, anywhere from 57 to 91 were  correctly classified by the machine learning algorithm. 
+
+After examining the csv file used to create the dataset, I noticed one thing. Out of 115,675 records, only 293 loans in the loan_status column were considered late (0.25%). I believe the algorithm is underperforming due to a lack of data regarding high risk loans. As such, I would advise running the various machine learning models on a dataset that has more indepth information regarding defaulted loans. We need a dataset that has more instances of high risk loans in comparison to low risk loans. And of these models, I would advise using the Easy Ensemble Classifier since in this exercise, it produced the most accurate, precise, and sensitive results. 
+
