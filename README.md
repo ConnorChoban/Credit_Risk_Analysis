@@ -10,7 +10,7 @@ The purpose of this analysis is to determine which machine learning algorithm is
 
 - Accuracy Score: 64.56%
 - Precision Score: 1%
-- Recall Score: 68%
+- Recall Score: 61%
 
 <img width="912" alt="Screen Shot 2022-06-27 at 11 33 33 PM" src="https://user-images.githubusercontent.com/99847786/176086497-275c49bb-7e95-4707-af64-fe90f04492e3.png">
 
